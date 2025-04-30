@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enthuzias Playbook</title>
+    <style>
+        :root {
+            --deep-navy: #1E1E3F;
+            --vibrant-blue: #2563EB;
+            --purple: #8B5CF6;
+            --green: #10B981;
+            --orange: #F59E0B;
+            --white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --dark-gray: #111827;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #121224;
+            color: var(--white);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .title-highlight {
+            color: var(--vibrant-blue);
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .pathways {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .pathway-card {
+            background-color: rgba(30, 30, 63, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .blue-icon {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: var(--vibrant-blue);
+        }
+        
+        .purple-icon {
+            background-color: rgba(139, 92, 246, 0.2);
+            color: var(--purple);
+        }
+        
+        .green-icon {
+            background-color: rgba(16, 185, 129, 0.2);
+            color: var(--green);
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .card-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            display: block;
+            padding: 0.75rem;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+        
+        .blue-button {
+            background-color: var(--vibrant-blue);
+        }
+        
+        .blue-button:hover {
+            background-color: #1d4ed8;
+        }
+        
+        .purple-button {
+            background-color: var(--purple);
+        }
+        
+        .purple-button:hover {
+            background-color: #7c3aed;
+        }
+        
+        .green-button {
+            background-color: var(--green);
+        }
+        
+        .green-button:hover {
+            background-color: #059669;
+        }
+        
+        .icon {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The <span class="title-highlight">Enthuzias</span> Playbook</h1>
+            <p class="subtitle">Brokers can engage through three flexible pathways—designed to match your workflow, not disrupt it.</p>
+        </header>
+        
+        <div class="pathways">
+            <!-- Explore & Close Active Deals Card -->
+            <div class="pathway-card">
+                <div class="card-content">
+                    <div class="icon-circle blue-icon">
+                        <div class="icon">👤</div>
+                    </div>
+                    <h2 class="card-title">Explore & Close Active Deals</h2>
+                    <p class="card-description">
+                        Browse verified buyer requests and exclusive seller listings. Match your network with Enthuzias' live deals and start closing.
+                    </p>
+                </div>
+                <a href="#" class="cta-button blue-button">Explore</a>
+            </div>
+            
+            <!-- Request an Asset Card -->
+            <div class="pathway-card">
+                <div class="card-content">
+                    <div class="icon-circle purple-icon">
+                        <div class="icon">🔍</div>
+                    </div>
+                    <h2 class="card-title">Request an Asset</h2>
+                    <p class="card-description">
+                        Didn't find the right match? Post your buyer's requirement and let trusted brokers or sellers come to you.
+                    </p>
+                </div>
+                <a href="#" class="cta-button purple-button">Request</a>
+            </div>
+            
+            <!-- List Your Asset Card -->
+            <div class="pathway-card">
+                <div class="card-content">
+                    <div class="icon-circle green-icon">
+                        <div class="icon">💰</div>
+                    </div>
+                    <h2 class="card-title">List Your Asset</h2>
+                    <p class="card-description">
+                        Got access to a genuine off-market deal? List it securely and work as the seller's broker while we protect your edge.
+                    </p>
+                </div>
+                <a href="#" class="cta-button green-button">List</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
